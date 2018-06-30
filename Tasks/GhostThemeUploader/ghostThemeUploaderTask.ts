@@ -8,16 +8,17 @@ let screenshotPath = tl.getPathInput("screenshots");
 let blogEndpint = tl.getInput("blog", false);
 let blogUrl = tl.getEndpointUrl(blogEndpint, false);
 let blogAuth = tl.getEndpointAuthorization(blogEndpint, false);
+let chromium = tl.getVariable("CHROMIUM_BIN");
 console.log('endpoint params', Object.keys(blogAuth));
 
 async function takeScreenshot(page: puppeteer.Page, name: string) {
     if (takeScreenshots) {
         await takeScreenshot(page, path.join(screenshotPath, name));
-}
+    }
 }
 
 async function themeUpload() {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({ executablePath: chromium });
     try {
         const page = await browser.newPage();
         console.log('Opening blog: ', blogUrl);
