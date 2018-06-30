@@ -4,7 +4,7 @@ import * as tl from "vsts-task-lib/task";
 import * as puppeteer from "puppeteer";
 
 let themePath = tl.getPathInput("theme");
-let takeScreenshots = tl.getBoolInput("takeScreenshots");
+let takeScreenshotsEnabled = tl.getBoolInput("takeScreenshots");
 let screenshotPath = tl.getPathInput("screenshotPath");
 let blogEndpoint = tl.getInput("blog");
 let blogUrl = tl.getEndpointUrl(blogEndpoint, false);
@@ -14,7 +14,7 @@ let uploadTimeout = parseInt(tl.getInput("uploadTimeout"));
 console.log('endpoint params', Object.keys(blogAuth.parameters));
 
 async function takeScreenshot(page: puppeteer.Page, name: string) {
-    if (takeScreenshots) {
+    if (takeScreenshotsEnabled) {
         await takeScreenshot(page, path.join(screenshotPath, name));
     }
 }
