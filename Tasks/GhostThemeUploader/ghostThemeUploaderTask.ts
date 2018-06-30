@@ -15,7 +15,7 @@ console.log('endpoint params', Object.keys(blogAuth.parameters));
 
 async function takeScreenshot(page: puppeteer.Page, name: string) {
     if (takeScreenshotsEnabled) {
-        await takeScreenshot(page, path.join(screenshotPath, name));
+        await page.screenshot({ path: path.join(screenshotPath, name) });
     }
 }
 
