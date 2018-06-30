@@ -10,7 +10,7 @@
     "postinstall": "vsts-build-tools-install",
     "prebuild": "vsts-build-tools-prebuild",
     "build": "tsc",
-    "package:clean": "del /S \"First Run\"",
+    "package:clean": "del /S \"First Run\" & del /S interactive_ui_tests.exe",
     "package": "vsts-build-tools-package",
     "build:test": "run-s build test",
     "test": "jasmine JASMINE_CONFIG_PATH=./Tests/jasmine.json",
