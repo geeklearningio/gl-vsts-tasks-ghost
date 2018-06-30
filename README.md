@@ -6,6 +6,8 @@
 
 [Ghost](https://ghostpkg.com/) is an amazing blogging platform. It is fast, reliable and now has an amazing editing experience. 
 
+![Features](https://github.com/geeklearningio/gl-vsts-tasks-ghost/blob/master/Extension/Screenshots/GBranding-Main.png)
+
 With this extension you can automate the publication of a theme to a Ghost blog instance. 
 
 > Note: We support only ghost 1.24 and above
