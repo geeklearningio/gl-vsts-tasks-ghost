@@ -43,6 +43,14 @@
             "helpMarkDown": "Path to the zipped theme"
         },
         {
+            "name": "uploadTimeout",
+            "type": "string",
+            "label": "Theme path",
+            "defaultValue": "120",
+            "required": false,
+            "helpMarkDown": "Upload timeout"
+        },
+        {
             "name": "takeScreenshots",
             "type": "boolean",
             "label": "Take screenshots",

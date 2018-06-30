@@ -9,6 +9,7 @@ let blogEndpint = tl.getInput("blog", false);
 let blogUrl = tl.getEndpointUrl(blogEndpint, false);
 let blogAuth = tl.getEndpointAuthorization(blogEndpint, false);
 let chromium = tl.getVariable("CHROMIUM_BIN");
+let uploadTimeout = parseInt(tl.getVariable("uploadTimeout");
 console.log('endpoint params', Object.keys(blogAuth));
 
 async function takeScreenshot(page: puppeteer.Page, name: string) {
@@ -60,7 +61,7 @@ async function themeUpload() {
         await page.click('button.gh-btn-red');
         await takeScreenshot(page, '.debug/theme.uploading.png');
 
-        await page.waitFor("//h1[contains(.,'Upload successful!')]", {})
+        await page.waitForXPath("//h1[contains(.,'Upload successful!')]", { timeout: uploadTimeout })
         await takeScreenshot(page, '.debug/complete.png');
         console.log('Uploading complete: ', themePath);
 
