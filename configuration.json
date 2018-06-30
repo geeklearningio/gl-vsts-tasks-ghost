@@ -1,0 +1,25 @@
+{
+    "environments": [
+        {
+            "Name": "production",
+            "VssExtensionIdSuffix": "",
+            "VssExtensionGalleryFlags": [
+                "Public",
+                "Preview"
+            ],
+            "DisplayNamesSuffix": "",
+            "TaskIds": {
+                "GhostThemeUploader": "7ffedbc4-ff2a-4b3c-8ad6-9ea1958275c9"
+            }
+        },
+        {
+            "Name": "dev",
+            "VssExtensionIdSuffix": "-dev",
+            "VssExtensionGalleryFlags": [],
+            "DisplayNamesSuffix": " (Development)",
+            "TaskIds": {
+                "GhostThemeUploader": "2ae6e689-c571-4d12-9e41-9e31d092ac29"
+            }
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "gl-vsts-tasks-ghost",
+  "version": "0.1.0",
+  "description": "Ghost task for the Team Services build system",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "clean": "vsts-build-tools-clean",
+    "postinstall": "vsts-build-tools-install",
+    "prebuild": "vsts-build-tools-prebuild",
+    "build": "tsc",
+    "package": "vsts-build-tools-package",
+    "build:test": "run-s build test",
+    "test": "jasmine JASMINE_CONFIG_PATH=./Tests/jasmine.json",
+    "test:chutzpah": "chutzpah.console ./Tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geeklearningio/gl-vsts-tasks-ghost"
+  },
+  "keywords": [
+    "ghost",
+    "node",
+    "node.js",
+    "npm",
+    "npm.js",
+    "install"
+  ],
+  "author": "Geek Learning, Adrien Siffermann, Cyprien Autexier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geeklearningio/gl-vsts-tasks-ghost/issues"
+  },
+  "homepage": "https://github.com/geeklearningio/gl-vsts-tasks-ghost/vsts-tasks",
+  "devDependencies": {
+    "@types/fs-extra": "^4.0.0",
+    "@types/ini": "^1.3.29",
+    "@types/node": "^6.0.0",
+    "@types/q": "^1.0.3",
+    "async": "2.0.1",
+    "gl-vsts-tasks-build-scripts": "0.4.0-alpha.4",
+    "karma": "^1.1.2",
+    "npm-run-all": "2.3.0",
+    "tslint": "5.7.0",
+    "typescript": "^2.4.0"
+  },
+  "dependencies": {
+    "@types/puppeteer": "^1.5.0"
+  }
+}

@@ -1,0 +1,65 @@
+{
+    "manifestVersion": 1,
+    "id": "gl-vsts-tasks-ghost",
+    "name": "Ghost",
+    "version": "0.0.0",
+    "publisher": "geeklearningio",    
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Deploy your Ghost theme with VSTS",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "extension-icon.png"        
+    },
+    "tags": [
+        "ghost",
+        "node",
+        "npm",
+        "package",
+        "utility"
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        },
+        "license": {
+            "path": "LICENSE.txt"
+        }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "https://github.com/geeklearningio/gl-vsts-tasks-ghost/wiki"
+        },
+        "support": {
+            "uri": "https://github.com/geeklearningio/gl-vsts-tasks-ghost/issues"
+        },
+        "repository": {
+            "uri": "https://github.com/geeklearningio/gl-vsts-tasks-ghost"
+        },
+        "issues": {
+            "uri": "https://github.com/geeklearningio/gl-vsts-tasks-ghost/issues"
+        }
+    },
+    "branding": {
+        "color": "#008B8B",
+        "theme": "dark"
+    },  
+    "files": [
+        {
+            "path": "Tasks"
+        },
+        {
+            "path": "Screenshots",
+            "addressable": true
+        }
+    ],
+    "repository" :{
+        "type": "git",
+        "uri": "https://github.com/geeklearningio/gl-vsts-tasks-ghost"
+    }
+}

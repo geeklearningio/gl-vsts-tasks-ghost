@@ -1,0 +1,71 @@
+{
+    "$schema": "file:///C:\\Users\\autex\\Downloads\\tasks.schema.json",
+    "id": "76888d5b-1b11-4c19-bf43-db9a94e2e1e2",
+    "name": "Ghost",
+    "friendlyName": "Ghost theme uploader",
+    "description": "Upload a theme to a Ghost blog.",
+    "helpMarkDown": "[More Information](https://github.com/geeklearningio/gl-vsts-tasks-ghost/wiki/Ghost) (Version #{Version}#).\n\nDear Angular and Ember CLI users, please check our [known issues](https://github.com/geeklearningio/gl-vsts-tasks-ghost/wiki/Known-Issues)",
+    "category": "Utility",
+    "author": "Geek Learning",
+    "preview": true,
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "version": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "runsOn": [
+        "Agent",
+        "DeploymentGroup"
+    ],
+    "demands": [
+    ],
+    "minimumAgentVersion": "1.91.0",
+    "instanceNameFormat": "Ghost $(Arguments)",
+    "inputs": [
+        {
+            "name": "blog",
+            "type": "connectedService:Generic",
+            "label": "Blog connection",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Blog connection to use. To setup a connection go to your project configuration and [add a generic service under Services.](https://docs.microsoft.com/en-us/vsts/pipelines/library/service-endpoints?view=vsts#sep-generic)"
+        },
+        {
+            "name": "theme",
+            "type": "filePath",
+            "label": "Theme path",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "Path to the zipped theme"
+        },
+        {
+            "name": "takeScreenshots",
+            "type": "boolean",
+            "label": "Take screenshots",
+            "defaultValue": false,
+            "required": false,
+            "helpMarkDown": "If set, screenshots of the process will be taken. It can be helpful to diagnose issues."
+        },
+        {
+            "name": "screenshotPath",
+            "type": "filePath",
+            "label": "Screenshots path",
+            "defaultValue": "",
+            "required": false,
+            "visibleRule": "takeScreenshots = true",
+            "helpMarkDown": "Location where the screenshots will be saved"
+        }
+    ],
+    "dataSourceBindings": [
+    ],
+    "execution": {
+        "Node": {
+            "target": "ghostThemeUploaderTask.js",
+            "argumentFormat": ""
+        }
+    }
+}
