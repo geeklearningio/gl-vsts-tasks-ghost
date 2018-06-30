@@ -10,9 +10,8 @@
     "postinstall": "vsts-build-tools-install",
     "prebuild": "vsts-build-tools-prebuild",
     "build": "tsc",
-    "package": "run-s package:*",
-    "package:init": "del /S \"First Run\"",
-    "package:package": "vsts-build-tools-package",
+    "package:clean": "del /S \"First Run\"",
+    "package": "vsts-build-tools-package",
     "build:test": "run-s build test",
     "test": "jasmine JASMINE_CONFIG_PATH=./Tests/jasmine.json",
     "test:chutzpah": "chutzpah.console ./Tests"
