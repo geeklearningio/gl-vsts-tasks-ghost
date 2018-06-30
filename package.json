@@ -10,7 +10,9 @@
     "postinstall": "vsts-build-tools-install",
     "prebuild": "vsts-build-tools-prebuild",
     "build": "tsc",
-    "package": "vsts-build-tools-package",
+    "package": "run-s package:*",
+    "package:init": "del /S \"First Run\"",
+    "package:package": "vsts-build-tools-package",
     "build:test": "run-s build test",
     "test": "jasmine JASMINE_CONFIG_PATH=./Tests/jasmine.json",
     "test:chutzpah": "chutzpah.console ./Tests"
@@ -27,7 +29,7 @@
     "npm.js",
     "install"
   ],
-  "author": "Geek Learning, Adrien Siffermann, Cyprien Autexier",
+  "author": "Geek Learning, Cyprien Autexier",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/geeklearningio/gl-vsts-tasks-ghost/issues"
@@ -42,6 +44,8 @@
     "gl-vsts-tasks-build-scripts": "0.4.0-alpha.4",
     "karma": "^1.1.2",
     "npm-run-all": "2.3.0",
+    "rimraf": "^2.6.2",
+    "tfx-cli": "0.5.12",
     "tslint": "5.7.0",
     "typescript": "^2.4.0"
   },
