@@ -9,7 +9,7 @@ let blogEndpint = tl.getInput("blog", false);
 let blogUrl = tl.getEndpointUrl(blogEndpint, false);
 let blogAuth = tl.getEndpointAuthorization(blogEndpint, false);
 let chromium = tl.getVariable("CHROMIUM_BIN");
-let uploadTimeout = parseInt(tl.getVariable("uploadTimeout");
+let uploadTimeout = parseInt(tl.getVariable("uploadTimeout"));
 console.log('endpoint params', Object.keys(blogAuth));
 
 async function takeScreenshot(page: puppeteer.Page, name: string) {
@@ -27,10 +27,10 @@ async function themeUpload() {
         const separator = blogUrl.endsWith('/') ? '' : '/';
 
         await page.goto(`${blogUrl}${separator}admin`);
-        await takeScreenshot(page, '.debug/login.navigated.png');
+        await takeScreenshot(page, 'login.navigated.png');
 
         await page.waitFor('input[name=identification]')
-        await takeScreenshot(page, '.debug/login.loaded.png');
+        await takeScreenshot(page, 'login.loaded.png');
 
         const userName = blogAuth.parameters['username'];
         const password = blogAuth.parameters['password'];
@@ -38,31 +38,31 @@ async function themeUpload() {
         console.log('Logging in with  ', userName);
         await page.type('input[name=identification]', userName);
         await page.type('input[name=password]', password);
-        await takeScreenshot(page, '.debug/login.filled.png');
+        await takeScreenshot(page, 'login.filled.png');
         await page.click('button.login');
         await page.waitForNavigation({ waitUntil: 'networkidle0' });
-        await takeScreenshot(page, '.debug/login.done.png');
+        await takeScreenshot(page, 'login.done.png');
         console.log('Logged in with  ', userName);
 
         await page.goto(page.url() + 'settings/design', { waitUntil: 'networkidle0' });
-        await takeScreenshot(page, '.debug/theme.page.png');
+        await takeScreenshot(page, 'theme.page.png');
 
         console.log('Navigating to the design section');
         await page.waitFor('a.gh-themes-uploadbtn')
         await page.click('a.gh-themes-uploadbtn');
-        await takeScreenshot(page, '.debug/theme.upload.png');
+        await takeScreenshot(page, 'theme.upload.png');
 
         console.log('Uploading theme: ', themePath);
         var themeUpload = await page.$('input[type=file]');
         await themeUpload.uploadFile(themePath);
-        await takeScreenshot(page, '.debug/theme.file.png');
+        await takeScreenshot(page, 'theme.file.png');
 
         await page.waitFor('button.gh-btn-red');
         await page.click('button.gh-btn-red');
-        await takeScreenshot(page, '.debug/theme.uploading.png');
+        await takeScreenshot(page, 'theme.uploading.png');
 
         await page.waitForXPath("//h1[contains(.,'Upload successful!')]", { timeout: uploadTimeout })
-        await takeScreenshot(page, '.debug/complete.png');
+        await takeScreenshot(page, 'complete.png');
         console.log('Uploading complete: ', themePath);
 
     } catch (err) {
@@ -71,7 +71,7 @@ async function themeUpload() {
             tl.debug(err.stack);
         }
         tl.setResult(tl.TaskResult.Failed, String(err));
-        await takeScreenshot(page, '.debug/failure.png');
+        await takeScreenshot(page, 'failure.png');
 
     } finally {
         browser.close();
