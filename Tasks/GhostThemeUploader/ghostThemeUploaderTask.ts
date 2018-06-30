@@ -61,7 +61,7 @@ async function themeUpload() {
         await page.click('button.gh-btn-red');
         await takeScreenshot(page, 'theme.uploading.png');
 
-        await page.waitForXPath("//h1[contains(.,'Upload successful!')]", { timeout: uploadTimeout })
+        await page.waitForXPath("//h1[contains(.,'Upload successful!')]", { timeout: uploadTimeout * 1000 })
         await takeScreenshot(page, 'complete.png');
         console.log('Uploading complete: ', themePath);
 
