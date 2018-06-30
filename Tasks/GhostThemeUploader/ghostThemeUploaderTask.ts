@@ -1,16 +1,17 @@
 import * as path from "path";
+import * as fs from "fs-extra";
 import * as tl from "vsts-task-lib/task";
 import * as puppeteer from "puppeteer";
 
 let themePath = tl.getPathInput("theme");
 let takeScreenshots = tl.getBoolInput("takeScreenshots");
-let screenshotPath = tl.getPathInput("screenshots");
+let screenshotPath = tl.getPathInput("screenshotPath");
 let blogEndpint = tl.getInput("blog", false);
 let blogUrl = tl.getEndpointUrl(blogEndpint, false);
 let blogAuth = tl.getEndpointAuthorization(blogEndpint, false);
 let chromium = tl.getVariable("CHROMIUM_BIN");
 let uploadTimeout = parseInt(tl.getInput("uploadTimeout"));
-console.log('endpoint params', Object.keys(blogAuth));
+console.log('endpoint params', Object.keys(blogAuth.parameters));
 
 async function takeScreenshot(page: puppeteer.Page, name: string) {
     if (takeScreenshots) {
@@ -21,6 +22,7 @@ async function takeScreenshot(page: puppeteer.Page, name: string) {
 async function themeUpload() {
     const browser = await puppeteer.launch({ executablePath: chromium });
     const page = await browser.newPage();
+    await fs.ensureDir(screenshotPath);
     try {
         console.log('Opening blog: ', blogUrl);
 
