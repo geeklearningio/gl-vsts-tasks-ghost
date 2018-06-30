@@ -20,8 +20,8 @@ async function takeScreenshot(page: puppeteer.Page, name: string) {
 
 async function themeUpload() {
     const browser = await puppeteer.launch({ executablePath: chromium });
+    const page = await browser.newPage();
     try {
-        const page = await browser.newPage();
         console.log('Opening blog: ', blogUrl);
 
         const separator = blogUrl.endsWith('/') ? '' : '/';
@@ -71,6 +71,8 @@ async function themeUpload() {
             tl.debug(err.stack);
         }
         tl.setResult(tl.TaskResult.Failed, String(err));
+        await takeScreenshot(page, '.debug/failure.png');
+
     } finally {
         browser.close();
     }
