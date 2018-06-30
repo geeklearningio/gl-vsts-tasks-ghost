@@ -2,7 +2,7 @@
 
 # Ghost Build and Release Tasks
 
-![cistatus](https://geeklearning.visualstudio.com/_apis/public/build/definitions/f841b266-7595-4d01-9ee1-4864cf65aa73/77/badge)
+[![Build status](https://geeklearning.visualstudio.com/Ghost VSTS Extension/_apis/build/status/Ghost VSTS Extension-CI)](https://geeklearning.visualstudio.com/Ghost VSTS Extension/_build/latest?definitionId=138)
 
 [Ghost](https://ghostpkg.com/) is an amazing blogging platform. It is fast, reliable and now has an amazing editing experience. 
 
