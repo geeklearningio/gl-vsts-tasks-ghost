@@ -5,8 +5,9 @@ import * as puppeteer from "puppeteer";
 let themePath = tl.getPathInput("theme");
 let takeScreenshots = tl.getBoolInput("takeScreenshots");
 let screenshotPath = tl.getPathInput("screenshots");
-let blogUrl = tl.getEndpointUrl("blog", false);
-let blogAuth = tl.getEndpointAuthorization("blog", false);
+let blogEndpint = tl.getInput("blog", false);
+let blogUrl = tl.getEndpointUrl(blogEndpint, false);
+let blogAuth = tl.getEndpointAuthorization(blogEndpint, false);
 console.log('endpoint params', Object.keys(blogAuth));
 
 async function takeScreenshot(page: puppeteer.Page, name: string) {
