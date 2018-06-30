@@ -9,7 +9,7 @@ let blogEndpint = tl.getInput("blog", false);
 let blogUrl = tl.getEndpointUrl(blogEndpint, false);
 let blogAuth = tl.getEndpointAuthorization(blogEndpint, false);
 let chromium = tl.getVariable("CHROMIUM_BIN");
-let uploadTimeout = parseInt(tl.getVariable("uploadTimeout"));
+let uploadTimeout = parseInt(tl.getInput("uploadTimeout"));
 console.log('endpoint params', Object.keys(blogAuth));
 
 async function takeScreenshot(page: puppeteer.Page, name: string) {
