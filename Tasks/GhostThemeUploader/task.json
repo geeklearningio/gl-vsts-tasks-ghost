@@ -45,7 +45,7 @@
         {
             "name": "uploadTimeout",
             "type": "string",
-            "label": "Theme path",
+            "label": "Upload timeout",
             "defaultValue": "120",
             "required": false,
             "helpMarkDown": "Upload timeout"
