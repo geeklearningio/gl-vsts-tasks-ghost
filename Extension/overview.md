@@ -4,7 +4,7 @@
 
 With this extension you can automate the publication of a theme to a Ghost blog instance. 
 
-![Features](https://github.com/geeklearningio/gl-vsts-tasks-ghost/blob/master/Extension/Screenshots/Branding-Main.png)
+![Features](https://raw.githubusercontent.com/geeklearningio/gl-vsts-tasks-ghost/master/Extension/Screenshots/Branding-Main.png)
 
 > Note: We support only ghost 1.24 and above
 
