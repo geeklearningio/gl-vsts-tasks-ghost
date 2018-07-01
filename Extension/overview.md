@@ -18,13 +18,11 @@ With this extension you can automate the publication of a theme to a Ghost blog 
 
 ## Steps
 
-After installing the extension, you can add one (or more) of the tasks to a new or existing [build definition](https://www.visualstudio.com/en-us/docs/build/define/create) or [release definition](https://www.visualstudio.com/en-us/docs/release/author-release-definition/more-release-definition)
+This extension depends on Chromium. Due to extensions size limits it is not bundled with the tasks. 
 
-![add-task](Screenshots/Add-Tasks.png)
+You can install it thanks to the [Chromium Task](https://marketplace.visualstudio.com/items?itemName=schlumberger.chromium-build-tasks-Preview). (There's a known speed issue with the install speed. We submitted a patch which has been acceptd. So it shall be solved very soon)
 
-Starting with version `1.x`, you can configure custom registries directly in the task settings:
-
-![Custom Registries](Screenshots/Custom-Registries.png)
+Alternatively, if you are using Self Hosted agent, you can install it directly on your agent and set a `CHROMIUM_BIN` variable pointing to `chrome.exe` and also add a `chromium` capability to your agents.
 
 ## Learn more
 
