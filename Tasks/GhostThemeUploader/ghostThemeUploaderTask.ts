@@ -9,9 +9,14 @@ let screenshotPath = tl.getPathInput("screenshotPath");
 let blogEndpoint = tl.getInput("blog");
 let blogUrl = tl.getEndpointUrl(blogEndpoint, false);
 let blogAuth = tl.getEndpointAuthorization(blogEndpoint, false);
-let chromium = tl.getVariable("CHROMIUM_BIN");
+let chromiumBinVariable = tl.getVariable("CHROMIUM_BIN");
 let uploadTimeout = parseInt(tl.getInput("uploadTimeout"));
 console.log('endpoint params', Object.keys(blogAuth.parameters));
+
+const searchLocation = [
+    chromiumBinVariable,
+    path.join(process.env['programfiles(x86)'], '/google/chrome/Application/chrome.exe'),
+]
 
 async function takeScreenshot(page: puppeteer.Page, name: string) {
     if (takeScreenshotsEnabled) {
@@ -20,6 +25,19 @@ async function takeScreenshot(page: puppeteer.Page, name: string) {
 }
 
 async function themeUpload() {
+
+    let chromium = undefined;
+    for (let candidate of searchLocation) {
+        if (fs.existsSync(candidate)) {
+            chromium = candidate;
+            break;
+        }
+    }
+
+    if (!chromium) {
+        throw new Error('Chromium was not found. Please install it');
+    }
+
     const browser = await puppeteer.launch({ executablePath: chromium });
     const page = await browser.newPage();
     await fs.ensureDir(screenshotPath);
@@ -77,6 +95,17 @@ async function themeUpload() {
 
     } finally {
         browser.close();
+        
+        if (takeScreenshotsEnabled) {
+            let data = {
+                artifacttype: "container",
+                artifactname: "screenshots",
+                containerfolder: "screenshots",
+                localpath: screenshotPath,
+            };
+
+            tl.command("artifact.upload", data, screenshotPath);
+        }
     }
 }
 
