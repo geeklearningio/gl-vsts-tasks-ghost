@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@types/async@^2.0.49":
+  version "2.0.49"
+  resolved "https://www.myget.org/F/gl-unstable/npm/@types/async/-/@types/async-2.0.49.tgz#92e33d13f74c895cb9a7f38ba97db8431ed14bc0"
+
 "@types/events@*":
   version "1.2.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/events/-/@types/events-1.2.0.tgz#81a6731ce4df43619e5c8c945383b3e62a89ea86"
@@ -12,13 +16,31 @@
   dependencies:
     "@types/node" "*"
 
+"@types/fs-extra@^5.0.4":
+  version "5.0.4"
+  resolved "https://www.myget.org/F/gl-unstable/npm/@types/fs-extra/-/@types/fs-extra-5.0.4.tgz#b971134d162cc0497d221adde3dbb67502225599"
+  dependencies:
+    "@types/node" "*"
+
 "@types/ini@^1.3.29":
   version "1.3.29"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/ini/-/@types/ini-1.3.29.tgz#1325e981e047d40d13ce0359b821475b97741d2f"
 
+"@types/lodash@^4.14.110":
+  version "4.14.110"
+  resolved "https://www.myget.org/F/gl-unstable/npm/@types/lodash/-/@types/lodash-4.14.110.tgz#fb07498f84152947f30ea09d89207ca07123461e"
+
+"@types/minimist@^1.2.0":
+  version "1.2.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/@types/minimist/-/@types/minimist-1.2.0.tgz#69a23a3ad29caf0097f06eda59b361ee2f0639f6"
+
 "@types/node@*":
   version "10.5.1"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-10.5.1.tgz#d578446f4abff5c0b49ade9b4e5274f6badaadfc"
+
+"@types/node@^10.5.2":
+  version "10.5.2"
+  resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-10.5.2.tgz#f19f05314d5421fe37e74153254201a7bf00a707"
 
 "@types/node@^6.0.0":
   version "6.0.113"
@@ -34,6 +56,10 @@
 "@types/q@^1.0.3":
   version "1.5.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/q/-/@types/q-1.5.0.tgz#87567ea1206935405e51c03635b6cbf3a01f7bc4"
+
+"@types/semver@^5.5.0":
+  version "5.5.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/@types/semver/-/@types/semver-5.5.0.tgz#146c2a29ee7d3bae4bf2fcb274636e264c813c45"
 
 abbrev@1:
   version "1.1.1"
@@ -824,9 +850,16 @@ get-stdin@*:
   version "6.0.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/get-stdin/-/get-stdin-6.0.0.tgz#9e09bf712b360ab9225e812048f71fde9c89657b"
 
-gl-vsts-tasks-build-scripts@0.4.0-alpha.4:
-  version "0.4.0-alpha.4"
-  resolved "https://www.myget.org/F/gl-unstable/npm/gl-vsts-tasks-build-scripts/-/gl-vsts-tasks-build-scripts-0.4.0-alpha.4.tgz#8c1a56b54635906382a72eddfdf0e71507bf7759"
+gl-vsts-tasks-build-scripts@0.5.0-alpha.12:
+  version "0.5.0-alpha.12"
+  resolved "https://www.myget.org/F/gl-unstable/npm/gl-vsts-tasks-build-scripts/-/gl-vsts-tasks-build-scripts-0.5.0-alpha.12.tgz#b2648d77979ed689eba396b4a4c5121c1737408a"
+  dependencies:
+    "@types/async" "^2.0.49"
+    "@types/fs-extra" "^5.0.4"
+    "@types/lodash" "^4.14.110"
+    "@types/minimist" "^1.2.0"
+    "@types/node" "^10.5.2"
+    "@types/semver" "^5.5.0"
 
 glob-base@^0.3.0:
   version "0.3.0"
