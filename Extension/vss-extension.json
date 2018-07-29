@@ -3,18 +3,18 @@
     "id": "gl-vsts-tasks-ghost",
     "name": "Ghost",
     "version": "0.0.0",
-    "publisher": "geeklearningio",    
+    "publisher": "geeklearningio",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
-    ],    
+    ],
     "description": "Deploy your Ghost theme with VSTS",
     "categories": [
         "Build and release"
     ],
     "icons": {
-        "default": "extension-icon.png"        
+        "default": "extension-icon.png"
     },
     "tags": [
         "ghost",
@@ -48,7 +48,7 @@
     "branding": {
         "color": "#008B8B",
         "theme": "dark"
-    },  
+    },
     "files": [
         {
             "path": "Tasks"
@@ -58,7 +58,7 @@
             "addressable": true
         }
     ],
-    "repository" :{
+    "repository": {
         "type": "git",
         "uri": "https://github.com/geeklearningio/gl-vsts-tasks-ghost"
     }

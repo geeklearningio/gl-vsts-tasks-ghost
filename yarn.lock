@@ -850,9 +850,9 @@ get-stdin@*:
   version "6.0.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/get-stdin/-/get-stdin-6.0.0.tgz#9e09bf712b360ab9225e812048f71fde9c89657b"
 
-gl-vsts-tasks-build-scripts@0.5.0-alpha.12:
-  version "0.5.0-alpha.12"
-  resolved "https://www.myget.org/F/gl-unstable/npm/gl-vsts-tasks-build-scripts/-/gl-vsts-tasks-build-scripts-0.5.0-alpha.12.tgz#b2648d77979ed689eba396b4a4c5121c1737408a"
+gl-vsts-tasks-build-scripts@0.5.0-alpha.13:
+  version "0.5.0-alpha.13"
+  resolved "https://www.myget.org/F/gl-unstable/npm/gl-vsts-tasks-build-scripts/-/gl-vsts-tasks-build-scripts-0.5.0-alpha.13.tgz#210705dd797e40d54ec3db4a3653b3e62f3608a0"
   dependencies:
     "@types/async" "^2.0.49"
     "@types/fs-extra" "^5.0.4"

@@ -1,5 +1,5 @@
 {
-    "$schema": "file:///C:\\Users\\autex\\Downloads\\tasks.schema.json",
+    "$schema": "https://raw.githubusercontent.com/Microsoft/vsts-task-lib/master/tasks.schema.json",
     "id": "76888d5b-1b11-4c19-bf43-db9a94e2e1e2",
     "name": "Ghost",
     "friendlyName": "Ghost theme uploader",
@@ -8,10 +8,6 @@
     "category": "Utility",
     "author": "Geek Learning",
     "preview": true,
-    "visibility": [
-        "Build",
-        "Release"
-    ],
     "version": {
         "Major": 0,
         "Minor": 0,
@@ -19,7 +15,7 @@
     },
     "runsOn": [
         "Agent",
-        "DeploymentGroup"
+        "MachineGroup"
     ],
     "demands": [
     ],
@@ -28,7 +24,7 @@
     "inputs": [
         {
             "name": "blog",
-            "type": "connectedService:Generic",
+            "type": "connectedService:ghost",
             "label": "Blog connection",
             "defaultValue": "",
             "required": true,
