@@ -66,7 +66,7 @@ async function themeUpload() {
         await takeScreenshot(page, 'login.filled.png');
         await page.click('button.login');
         try {
-            await page.waitForNavigation({ waitUntil: 'networkidle0', timeout: 3500 });
+            await page.waitForNavigation({ waitUntil: 'networkidle0', timeout: 7500 });
             await takeScreenshot(page, 'login.done.png');
             console.log('Logged in with  ', userName);
         }
