@@ -18,9 +18,12 @@ const searchLocation = [
     path.join(process.env['programfiles(x86)'], '/google/chrome/Application/chrome.exe'),
 ]
 
+let screenshotCount = 0;
+
 async function takeScreenshot(page: puppeteer.Page, name: string) {
     if (takeScreenshotsEnabled) {
-        await page.screenshot({ path: path.join(screenshotPath, name) });
+        await page.screenshot({ path: path.join(screenshotPath, `${screenshotCount}_${name}`) });
+        screenshotCount++;
     }
 }
 
