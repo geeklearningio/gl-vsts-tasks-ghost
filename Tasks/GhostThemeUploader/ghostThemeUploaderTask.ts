@@ -2,6 +2,7 @@ import * as path from "path";
 import * as fs from "fs-extra";
 import * as tl from "vsts-task-lib/task";
 import * as puppeteer from "puppeteer";
+import { timeout } from "q";
 
 let themePath = tl.getPathInput("theme");
 let takeScreenshotsEnabled = tl.getBoolInput("takeScreenshots");
@@ -64,15 +65,21 @@ async function themeUpload() {
         await page.type('input[name=password]', password);
         await takeScreenshot(page, 'login.filled.png');
         await page.click('button.login');
-        await page.waitForNavigation({ waitUntil: 'networkidle0' });
-        await takeScreenshot(page, 'login.done.png');
-        console.log('Logged in with  ', userName);
-
-        var mainError = await page.$('p.main-error');
-        if (mainError != null){
-            var message = await page.evaluate(document => document.querySelector('p.main-error').innerText) as string;
-            throw new Error(message);
+        try {
+            await page.waitForNavigation({ waitUntil: 'networkidle0', timeout: 3500 });
+            await takeScreenshot(page, 'login.done.png');
+            console.log('Logged in with  ', userName);
         }
+        catch (err) {
+            var mainError = await page.$('p.main-error');
+            if (mainError != null) {
+                var message = await page.evaluate(document => document.querySelector('p.main-error').innerText) as string;
+                throw new Error(message);
+            } else {
+                throw err;
+            }
+        }
+
 
         await page.goto(page.url() + 'settings/design', { waitUntil: 'networkidle0' });
         await takeScreenshot(page, 'theme.page.png');
