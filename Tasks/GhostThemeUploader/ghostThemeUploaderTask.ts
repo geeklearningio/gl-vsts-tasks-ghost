@@ -38,7 +38,8 @@ async function themeUpload() {
     }
 
     if (!chromium) {
-        throw new Error('Chromium was not found. Please install it');
+        tl.setResult(tl.TaskResult.Failed, 'Chromium was not found. Please install it');
+        return;
     }
 
     const browser = await puppeteer.launch({ executablePath: chromium });
@@ -80,9 +81,16 @@ async function themeUpload() {
         await themeUpload.uploadFile(themePath);
         await takeScreenshot(page, 'theme.file.png');
 
-        await page.waitFor('button.gh-btn-red');
-        await page.click('button.gh-btn-red');
-        await takeScreenshot(page, 'theme.uploading.png');
+        try {
+            // if overwrite message
+            await page.waitFor('button.gh-btn-red', { timeout: 1000 });
+
+            await page.click('button.gh-btn-red');
+            await takeScreenshot(page, 'theme.uploading.png');
+        }
+        catch (err) {
+
+        }
 
         await page.waitForXPath("//h1[contains(.,'Upload successful!')]", { timeout: uploadTimeout * 1000 })
         await takeScreenshot(page, 'complete.png');
@@ -98,7 +106,7 @@ async function themeUpload() {
 
     } finally {
         browser.close();
-        
+
         if (takeScreenshotsEnabled) {
             let data = {
                 artifacttype: "container",
