@@ -68,6 +68,12 @@ async function themeUpload() {
         await takeScreenshot(page, 'login.done.png');
         console.log('Logged in with  ', userName);
 
+        var mainError = await page.$('p.main-error');
+        if (mainError != null){
+            var message = await page.evaluate(document => document.querySelector('p.main-error').innerText) as string;
+            throw new Error(message);
+        }
+
         await page.goto(page.url() + 'settings/design', { waitUntil: 'networkidle0' });
         await takeScreenshot(page, 'theme.page.png');
 
