@@ -12,7 +12,6 @@ let blogUrl = tl.getEndpointUrl(blogEndpoint, false);
 let blogAuth = tl.getEndpointAuthorization(blogEndpoint, false);
 let chromiumBinVariable = tl.getVariable("CHROMIUM_BIN");
 let uploadTimeout = parseInt(tl.getInput("uploadTimeout"));
-console.log('endpoint params', Object.keys(blogAuth.parameters));
 
 const searchLocation = [
     chromiumBinVariable,
