@@ -73,7 +73,7 @@ async function themeUpload() {
         catch (err) {
             var mainError = await page.$('p.main-error');
             if (mainError != null) {
-                var message = await page.evaluate(document => document.querySelector('p.main-error').innerText) as string;
+                var message = await page.evaluate(el => el.innerText, mainError) as string;
                 throw new Error(message);
             } else {
                 throw err;
