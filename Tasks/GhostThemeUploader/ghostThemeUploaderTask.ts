@@ -95,7 +95,7 @@ async function themeUpload() {
 
         try {
             // if overwrite message
-            await page.waitFor('button.gh-btn-red', { timeout: 1000 });
+            await page.waitFor('button.gh-btn-red', { timeout: 7500 });
 
             await page.click('button.gh-btn-red');
             await takeScreenshot(page, 'theme.uploading.png');
