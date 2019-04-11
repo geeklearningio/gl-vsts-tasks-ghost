@@ -70,6 +70,10 @@
         "Node": {
             "target": "ghostThemeUploaderTask.js",
             "argumentFormat": ""
+        },
+        "Node10": {
+            "target": "ghostThemeUploaderTask.js",
+            "argumentFormat": ""
         }
     }
 }
