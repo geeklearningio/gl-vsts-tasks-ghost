@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Microsoft/vsts-task-lib/master/tasks.schema.json",
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
     "id": "76888d5b-1b11-4c19-bf43-db9a94e2e1e2",
     "name": "Ghost",
     "friendlyName": "Ghost theme uploader",
