@@ -1,6 +1,6 @@
 import * as path from "path";
 import * as fs from "fs-extra";
-import * as tl from "vsts-task-lib/task";
+import * as tl from "azure-pipelines-task-lib/task";
 import * as puppeteer from "puppeteer";
 import { timeout } from "q";
 
@@ -42,8 +42,8 @@ async function themeUpload() {
         return;
     }
 
-    const browser = await puppeteer.launch({ executablePath: chromium });
-    const page = await browser.newPage();
+    const browser = await puppeteer.launch({ executablePath: chromium, args: ['--window-size=1920,1080' ] } );
+    const page = await browser.newPage( );
     await fs.ensureDir(screenshotPath);
     try {
         console.log('Opening blog: ', blogUrl);
