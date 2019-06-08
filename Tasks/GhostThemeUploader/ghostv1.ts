@@ -1,7 +1,7 @@
 import * as path from "path";
 import * as fs from "fs-extra";
-import * as tl from "vsts-task-lib/task";
 import * as puppeteer from "puppeteer";
+import * as tl from "azure-pipelines-task-lib/task";
 
 export async function themeUploadV1() {
   let chromiumBinVariable = tl.getVariable("CHROMIUM_BIN");
@@ -48,7 +48,10 @@ export async function themeUploadV1() {
     return;
   }
 
-  const browser = await puppeteer.launch({ executablePath: chromium });
+  const browser = await puppeteer.launch({
+    executablePath: chromium,
+    args: ["--window-size=1920,1080"]
+  });
   const page = await browser.newPage();
   await fs.ensureDir(screenshotPath);
   try {

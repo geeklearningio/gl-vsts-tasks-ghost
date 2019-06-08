@@ -1,4 +1,4 @@
-import * as tl from "vsts-task-lib/task";
+import * as tl from "azure-pipelines-task-lib/task";
 
 import { themeUploadV1 } from "./ghostv1";
 import { themeUploadV2 } from "./ghostv2";

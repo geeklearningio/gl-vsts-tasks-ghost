@@ -1,5 +1,5 @@
-import * as tl from "vsts-task-lib/task";
 import GhostAdminAPI, { GhostVersions, AdminApi } from "@tryghost/admin-api";
+import * as tl from "azure-pipelines-task-lib/task";
 
 export interface Options {
   blogUrl: string;

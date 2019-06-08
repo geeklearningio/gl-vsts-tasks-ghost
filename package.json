@@ -44,9 +44,9 @@
     "karma": "^1.1.2",
     "npm-run-all": "2.3.0",
     "rimraf": "^2.6.2",
-    "tfx-cli": "0.5.12",
-    "tslint": "5.7.0",
-    "typescript": "^2.4.0"
+    "tfx-cli": "^0.6.4",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.3"
   },
   "dependencies": {
     "@types/puppeteer": "^1.5.0"
