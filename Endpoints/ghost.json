@@ -32,7 +32,7 @@
       },
       {
         "type": "ms.vss-endpoint.endpoint-auth-scheme-basic",
-        "displayName": "Blog admin username/password",
+        "displayName": "[v1, deprecated] username/password",
         "inputDescriptors": [
           {
             "id": "username",
