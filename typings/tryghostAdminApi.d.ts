@@ -1,19 +1,19 @@
 declare module "@tryghost/admin-api" {
-  export interface AdminApiOptions {
+  interface AdminApiOptions {
     url: string;
     key: string;
     version: "v2";
   }
 
-  export interface ThemeData {
+  interface ThemeData {
     file: string;
   }
 
-  export class ThemesApi {
+  class ThemesApi {
     upload(data: ThemeData): PromiseLike<any>;
   }
 
-  export class AdminApi {
+  class AdminApi {
     themes: ThemesApi;
   }
 
@@ -23,5 +23,5 @@ declare module "@tryghost/admin-api" {
     public api: AdminApi;
   }
 
-  export default GhostAdminApiClient;
+  export = GhostAdminApiClient;
 }
