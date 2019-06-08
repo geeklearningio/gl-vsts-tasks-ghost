@@ -1,6 +1,6 @@
 import * as tl from "azure-pipelines-task-lib/task";
 
-const GhostAdminApiClient = require("@tryghost/admin-api");
+import GhostAdminApiClient = require("@tryghost/admin-api");
 
 export interface Options {
   blogUrl: string;
@@ -20,5 +20,5 @@ export async function themeUploadV2(options: Options) {
     version: options.version
   });
 
-  await client.api.themes.upload({ file: options.themePath });
+  await client.themes.upload({ file: options.themePath });
 }

@@ -13,14 +13,9 @@ declare module "@tryghost/admin-api" {
     upload(data: ThemeData): PromiseLike<any>;
   }
 
-  class AdminApi {
-    themes: ThemesApi;
-  }
-
   class GhostAdminApiClient {
     constructor(options: AdminApiOptions);
-
-    public api: AdminApi;
+    themes: ThemesApi;
   }
 
   export = GhostAdminApiClient;
