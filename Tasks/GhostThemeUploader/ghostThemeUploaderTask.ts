@@ -12,13 +12,16 @@ async function themeUpload() {
       break;
     default:
       const blogEndpoint = tl.getInput("blog");
-
-      await themeUploadV2({
-        themePath: tl.getPathInput("theme"),
-        blogUrl: tl.getEndpointUrl(blogEndpoint, false),
-        blogAuth: tl.getEndpointAuthorization(blogEndpoint, false),
-        version: "v2"
-      });
+      try {
+        await themeUploadV2({
+          themePath: tl.getPathInput("theme"),
+          blogUrl: tl.getEndpointUrl(blogEndpoint, false),
+          blogAuth: tl.getEndpointAuthorization(blogEndpoint, false),
+          version: "v2"
+        });
+      } catch (error) {
+        tl.setResult(tl.TaskResult.Failed, error.toString(), true);
+      }
       break;
   }
 }
