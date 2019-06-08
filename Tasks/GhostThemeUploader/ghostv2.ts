@@ -1,11 +1,11 @@
-import GhostAdminAPI, { GhostVersions, AdminApi } from "@tryghost/admin-api";
+import GhostAdminAPI from "@tryghost/admin-api";
 import * as tl from "azure-pipelines-task-lib/task";
 
 export interface Options {
   blogUrl: string;
   blogAuth: tl.EndpointAuthorization;
   themePath: string;
-  version: GhostVersions;
+  version: "v2";
 }
 
 export async function themeUploadV2(options: Options) {

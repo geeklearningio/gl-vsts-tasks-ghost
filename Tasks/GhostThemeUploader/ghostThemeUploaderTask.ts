@@ -2,7 +2,6 @@ import * as tl from "azure-pipelines-task-lib/task";
 
 import { themeUploadV1 } from "./ghostv1";
 import { themeUploadV2 } from "./ghostv2";
-import { GhostVersions } from "@tryghost/admin-api";
 
 let version = tl.getInput("version");
 
@@ -18,7 +17,7 @@ async function themeUpload() {
         themePath: tl.getPathInput("theme"),
         blogUrl: tl.getEndpointUrl(blogEndpoint, false),
         blogAuth: tl.getEndpointAuthorization(blogEndpoint, false),
-        version: GhostVersions.v2
+        version: "v2"
       });
       break;
   }

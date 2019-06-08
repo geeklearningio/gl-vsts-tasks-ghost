@@ -1,12 +1,8 @@
 declare module "@tryghost/admin-api" {
-  export enum GhostVersions {
-    v2 = "v2"
-  }
-
   export interface AdminApiOptions {
     url: string;
     key: string;
-    version: GhostVersions;
+    version: "v2";
   }
 
   export interface ThemeData {
