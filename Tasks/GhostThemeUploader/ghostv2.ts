@@ -1,6 +1,6 @@
 import * as tl from "azure-pipelines-task-lib/task";
 
-import GhostAdminApiClient = require("@tryghost/admin-api");
+const GhostAdminApiClient = require("@tryghost/admin-api");
 
 export interface Options {
   blogUrl: string;
