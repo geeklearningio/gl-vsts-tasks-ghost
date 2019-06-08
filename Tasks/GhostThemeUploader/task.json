@@ -4,7 +4,7 @@
   "name": "Ghost",
   "friendlyName": "Ghost theme uploader",
   "description": "Upload a theme to a Ghost blog.",
-  "helpMarkDown": "[More Information](https://github.com/geeklearningio/gl-vsts-tasks-ghost/wiki/Ghost) (Version #{Version}#).\n\nDear Angular and Ember CLI users, please check our [known issues](https://github.com/geeklearningio/gl-vsts-tasks-ghost/wiki/Known-Issues)",
+  "helpMarkDown": "[More Information](https://github.com/geeklearningio/gl-vsts-tasks-ghost/wiki/Ghost) (Version #{Version}#).",
   "category": "Utility",
   "author": "Geek Learning",
   "preview": true,
