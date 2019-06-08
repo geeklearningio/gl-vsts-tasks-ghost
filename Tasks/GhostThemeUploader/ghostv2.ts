@@ -12,7 +12,7 @@ export interface Options {
 export async function themeUploadV2(options: Options) {
   const client = new GhostAdminApiClient({
     url: options.blogUrl,
-    key: options.blogAuth.parameters["password"] as string,
+    key: options.blogAuth.parameters["token"] as string,
     version: options.version
   });
 
