@@ -13,9 +13,9 @@ steps:
   displayName: GitVersion
 
 - task: NodeTool@0
-  displayName: 'Use Node 8.x'
+  displayName: 'Use Node 10.x'
   inputs:
-    versionSpec: 8.x
+    versionSpec: 10.x
 
 - task: geeklearningio.gl-vsts-tasks-yarn-dev.yarn-installer-task.YarnInstaller@3
   displayName: 'Use Yarn 1.x'
