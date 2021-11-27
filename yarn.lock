@@ -2,13 +2,36 @@
 # yarn lockfile v1
 
 
+"@tryghost/admin-api@^1.4.4":
+  version "1.4.4"
+  resolved "https://www.myget.org/F/gl-unstable/npm/@tryghost/admin-api/-/@tryghost/admin-api-1.4.4.tgz#394261110be5c164c2cc20cf96871047e9bd6409"
+  integrity sha1-OUJhEQvlwWTCzCDPlocQR+m9ZAk=
+  dependencies:
+    axios "^0.21.1"
+    form-data "^3.0.0"
+    jsonwebtoken "^8.4.0"
+
 "@types/async@^2.0.49":
   version "2.0.49"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/async/-/@types/async-2.0.49.tgz#92e33d13f74c895cb9a7f38ba97db8431ed14bc0"
 
+"@types/concat-stream@^1.6.0":
+  version "1.6.1"
+  resolved "https://www.myget.org/F/gl-unstable/npm/@types/concat-stream/-/@types/concat-stream-1.6.1.tgz#24bcfc101ecf68e886aaedce60dfd74b632a1b74"
+  integrity sha1-JLz8EB7PaOiGqu3OYN/XS2MqG3Q=
+  dependencies:
+    "@types/node" "*"
+
 "@types/events@*":
   version "1.2.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/events/-/@types/events-1.2.0.tgz#81a6731ce4df43619e5c8c945383b3e62a89ea86"
+
+"@types/form-data@0.0.33":
+  version "0.0.33"
+  resolved "https://www.myget.org/F/gl-unstable/npm/@types/form-data/-/@types/form-data-0.0.33.tgz#c9ac85b2a5fd18435b8c85d9ecb50e6d6c893ff8"
+  integrity sha1-yayFsqX9GENbjIXZ7LUObWyJP/g=
+  dependencies:
+    "@types/node" "*"
 
 "@types/fs-extra@^4.0.0":
   version "4.0.8"
@@ -38,6 +61,11 @@
   version "10.5.1"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-10.5.1.tgz#d578446f4abff5c0b49ade9b4e5274f6badaadfc"
 
+"@types/node@^10.0.3":
+  version "10.17.60"
+  resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-10.17.60.tgz#35f3d6213daed95da7f0f73e75bcc6980e90597b"
+  integrity sha1-NfPWIT2u2V2n8Pc+dbzGmA6QWXs=
+
 "@types/node@^11.10.4":
   version "11.13.13"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-11.13.13.tgz#a3d2a8a908ce322f24f0f8c88160b44c7dd5c452"
@@ -45,6 +73,11 @@
 "@types/node@^6.0.0":
   version "6.0.113"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-6.0.113.tgz#4b41f38ad03e4b41f9dc259b3b58aecb22c9aebc"
+
+"@types/node@^8.0.0":
+  version "8.10.66"
+  resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-8.10.66.tgz#dd035d409df322acc83dff62a602f12a5783bbb3"
+  integrity sha1-3QNdQJ3zIqzIPf9ipgLxKleDu7M=
 
 "@types/puppeteer@^1.5.0":
   version "1.5.0"
@@ -56,6 +89,11 @@
 "@types/q@^1.0.3":
   version "1.5.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/q/-/@types/q-1.5.0.tgz#87567ea1206935405e51c03635b6cbf3a01f7bc4"
+
+"@types/qs@^6.2.31":
+  version "6.9.7"
+  resolved "https://www.myget.org/F/gl-unstable/npm/@types/qs/-/@types/qs-6.9.7.tgz#63bb7d067db107cc1e457c303bc25d511febf6cb"
+  integrity sha1-Y7t9Bn2xB8weRXwwO8JdUR/r9ss=
 
 "@types/semver@^5.5.0":
   version "5.5.0"
@@ -199,6 +237,11 @@ arrify@^1.0.1:
   version "1.0.1"
   resolved "https://www.myget.org/F/gl-unstable/npm/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
+asap@~2.0.6:
+  version "2.0.6"
+  resolved "https://www.myget.org/F/gl-unstable/npm/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
+  integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
+
 async-each-series@^1.1.0:
   version "1.1.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/async-each-series/-/async-each-series-1.1.0.tgz#f42fd8155d38f21a5b8ea07c28e063ed1700b138"
@@ -226,6 +269,31 @@ async@^2.0.0, async@^2.6.1:
   resolved "https://www.myget.org/F/gl-unstable/npm/async/-/async-2.6.1.tgz#b245a23ca71930044ec53fa46aa00a3e87c6a610"
   dependencies:
     lodash "^4.17.10"
+
+asynckit@^0.4.0:
+  version "0.4.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
+  integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
+
+axios@^0.21.1:
+  version "0.21.4"
+  resolved "https://www.myget.org/F/gl-unstable/npm/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha1-xnuQ3AVo5cHPKwuFjEO6KOLtpXU=
+  dependencies:
+    follow-redirects "^1.14.0"
+
+azure-pipelines-task-lib@^3.1.10:
+  version "3.1.10"
+  resolved "https://www.myget.org/F/gl-unstable/npm/azure-pipelines-task-lib/-/azure-pipelines-task-lib-3.1.10.tgz#34ba22afca2472fd3a2366ddf574c1cf11fb2f66"
+  integrity sha1-NLoir8okcv06I2bd9XTBzxH7L2Y=
+  dependencies:
+    minimatch "3.0.4"
+    mockery "^1.7.0"
+    q "^1.5.1"
+    semver "^5.1.0"
+    shelljs "^0.8.4"
+    sync-request "6.1.0"
+    uuid "^3.0.1"
 
 babel-code-frame@^6.22.0:
   version "6.26.0"
@@ -341,9 +409,19 @@ buffer-crc32@^0.2.1:
   version "0.2.13"
   resolved "https://www.myget.org/F/gl-unstable/npm/buffer-crc32/-/buffer-crc32-0.2.13.tgz#0d333e3f00eac50aa1454abd30ef8c2a5d9a7242"
 
+buffer-equal-constant-time@1.0.1:
+  version "1.0.1"
+  resolved "https://www.myget.org/F/gl-unstable/npm/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz#f8e71132f7ffe6e01a5c9697a4c6f3e48d5cc819"
+  integrity sha1-+OcRMvf/5uAaXJaXpMbz5I1cyBk=
+
 buffer-fill@^1.0.0:
   version "1.0.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/buffer-fill/-/buffer-fill-1.0.0.tgz#f8f78b76789888ef39f205cd637f68e702122b2c"
+
+buffer-from@^1.0.0:
+  version "1.1.2"
+  resolved "https://www.myget.org/F/gl-unstable/npm/buffer-from/-/buffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
+  integrity sha1-KxRqb9cugLT1XSVfNe1Zo6mkG9U=
 
 builtin-modules@^1.0.0, builtin-modules@^1.1.1:
   version "1.1.1"
@@ -352,6 +430,14 @@ builtin-modules@^1.0.0, builtin-modules@^1.1.1:
 bytes@3.0.0:
   version "3.0.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/bytes/-/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"
+
+call-bind@^1.0.0:
+  version "1.0.2"
+  resolved "https://www.myget.org/F/gl-unstable/npm/call-bind/-/call-bind-1.0.2.tgz#b1d4e89e688119c3c9a903ad30abb2f6a919be3c"
+  integrity sha1-sdTonmiBGcPJqQOtMKuy9qkZvjw=
+  dependencies:
+    function-bind "^1.1.1"
+    get-intrinsic "^1.0.2"
 
 callsite@1.0.0:
   version "1.0.0"
@@ -376,6 +462,11 @@ camelcase@^4.1.0:
 capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
+
+caseless@^0.12.0, caseless@~0.12.0:
+  version "0.12.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
+  integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
 chalk@^1.0.0, chalk@^1.1.1, chalk@^1.1.3:
   version "1.1.3"
@@ -472,6 +563,13 @@ combine-lists@^1.0.0:
   dependencies:
     lodash "^4.5.0"
 
+combined-stream@^1.0.6, combined-stream@^1.0.8:
+  version "1.0.8"
+  resolved "https://www.myget.org/F/gl-unstable/npm/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
+  integrity sha1-w9RaizT9cwYxoRCoolIGgrMdWn8=
+  dependencies:
+    delayed-stream "~1.0.0"
+
 commander@^2.12.1:
   version "2.20.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
@@ -508,6 +606,16 @@ compress-commons@^1.2.0:
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://www.myget.org/F/gl-unstable/npm/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
+
+concat-stream@^1.6.0, concat-stream@^1.6.2:
+  version "1.6.2"
+  resolved "https://www.myget.org/F/gl-unstable/npm/concat-stream/-/concat-stream-1.6.2.tgz#904bdf194cd3122fc675c77fc4ac3d4ff0fd1a34"
+  integrity sha1-kEvfGUzTEi/Gdcd/xKw9T/D9GjQ=
+  dependencies:
+    buffer-from "^1.0.0"
+    inherits "^2.0.3"
+    readable-stream "^2.2.2"
+    typedarray "^0.0.6"
 
 configstore@^2.0.0:
   version "2.1.0"
@@ -671,6 +779,11 @@ define-properties@^1.1.2:
     foreach "^2.0.5"
     object-keys "^1.0.8"
 
+delayed-stream@~1.0.0:
+  version "1.0.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
+  integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
+
 delegates@^1.0.0:
   version "1.0.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
@@ -715,6 +828,13 @@ duplexer2@^0.1.4:
 duplexer@~0.1.1:
   version "0.1.1"
   resolved "https://www.myget.org/F/gl-unstable/npm/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
+
+ecdsa-sig-formatter@1.0.11:
+  version "1.0.11"
+  resolved "https://www.myget.org/F/gl-unstable/npm/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz#ae0f0fa2d85045ef14a817daa3ce9acd0489e5bf"
+  integrity sha1-rg8PothQRe8UqBfao86azQSJ5b8=
+  dependencies:
+    safe-buffer "^5.0.1"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -1003,6 +1123,11 @@ follow-redirects@^1.0.0:
   dependencies:
     debug "^3.1.0"
 
+follow-redirects@^1.14.0:
+  version "1.14.5"
+  resolved "https://www.myget.org/F/gl-unstable/npm/follow-redirects/-/follow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
+  integrity sha1-8JpYSJgdPHcrU5Iwl3hSP42Fw4E=
+
 for-in@^1.0.1:
   version "1.0.2"
   resolved "https://www.myget.org/F/gl-unstable/npm/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -1016,6 +1141,24 @@ for-own@^0.1.4:
 foreach@^2.0.5:
   version "2.0.5"
   resolved "https://www.myget.org/F/gl-unstable/npm/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
+
+form-data@^2.2.0:
+  version "2.5.1"
+  resolved "https://www.myget.org/F/gl-unstable/npm/form-data/-/form-data-2.5.1.tgz#f2cbec57b5e59e23716e128fe44d4e5dd23895f4"
+  integrity sha1-8svsV7XlniNxbhKP5E1OXdI4lfQ=
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.6"
+    mime-types "^2.1.12"
+
+form-data@^3.0.0:
+  version "3.0.1"
+  resolved "https://www.myget.org/F/gl-unstable/npm/form-data/-/form-data-3.0.1.tgz#ebd53791b78356a99af9a300d4282c4d5eb9755f"
+  integrity sha1-69U3kbeDVqma+aMA1CgsTV65dV8=
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
 
 from@~0:
   version "0.1.7"
@@ -1070,6 +1213,20 @@ gauge@~2.7.3:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
+
+get-intrinsic@^1.0.2:
+  version "1.1.1"
+  resolved "https://www.myget.org/F/gl-unstable/npm/get-intrinsic/-/get-intrinsic-1.1.1.tgz#15f59f376f855c446963948f0d24cd3637b4abc6"
+  integrity sha1-FfWfN2+FXERpY5SPDSTNNje0q8Y=
+  dependencies:
+    function-bind "^1.1.1"
+    has "^1.0.3"
+    has-symbols "^1.0.1"
+
+get-port@^3.1.0:
+  version "3.2.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/get-port/-/get-port-3.2.0.tgz#dd7ce7de187c06c8bf353796ac71e099f0980ebc"
+  integrity sha1-3Xzn3hh8Bsi/NTeWrHHgmfCYDrw=
 
 get-stdin@*:
   version "6.0.0"
@@ -1178,11 +1335,16 @@ has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
 
+has-symbols@^1.0.1:
+  version "1.0.2"
+  resolved "https://www.myget.org/F/gl-unstable/npm/has-symbols/-/has-symbols-1.0.2.tgz#165d3070c00309752a1236a479331e3ac56f1423"
+  integrity sha1-Fl0wcMADCXUqEjakeTMeOsVvFCM=
+
 has-unicode@^2.0.0:
   version "2.0.1"
   resolved "https://www.myget.org/F/gl-unstable/npm/has-unicode/-/has-unicode-2.0.1.tgz#e0e6fe6a28cf51138855e086d1691e771de2a8b9"
 
-has@^1.0.1:
+has@^1.0.1, has@^1.0.3:
   version "1.0.3"
   resolved "https://www.myget.org/F/gl-unstable/npm/has/-/has-1.0.3.tgz#722d7cbfc1f6aa8241f16dd814e011e1f41e8796"
   dependencies:
@@ -1191,6 +1353,16 @@ has@^1.0.1:
 hosted-git-info@^2.1.4:
   version "2.6.1"
   resolved "https://www.myget.org/F/gl-unstable/npm/hosted-git-info/-/hosted-git-info-2.6.1.tgz#6e4cee78b01bb849dcf93527708c69fdbee410df"
+
+http-basic@^8.1.1:
+  version "8.1.3"
+  resolved "https://www.myget.org/F/gl-unstable/npm/http-basic/-/http-basic-8.1.3.tgz#a7cabee7526869b9b710136970805b1004261bbf"
+  integrity sha1-p8q+51Joabm3EBNpcIBbEAQmG78=
+  dependencies:
+    caseless "^0.12.0"
+    concat-stream "^1.6.2"
+    http-response-object "^3.0.1"
+    parse-cache-control "^1.0.1"
 
 http-errors@1.6.3, http-errors@~1.6.3:
   version "1.6.3"
@@ -1208,6 +1380,13 @@ http-proxy@^1.13.0:
     eventemitter3 "^3.0.0"
     follow-redirects "^1.0.0"
     requires-port "^1.0.0"
+
+http-response-object@^3.0.1:
+  version "3.0.2"
+  resolved "https://www.myget.org/F/gl-unstable/npm/http-response-object/-/http-response-object-3.0.2.tgz#7f435bb210454e4360d074ef1f989d5ea8aa9810"
+  integrity sha1-f0NbshBFTkNg0HTvH5idXqiqmBA=
+  dependencies:
+    "@types/node" "^10.0.3"
 
 i@0.3.x:
   version "0.3.6"
@@ -1252,9 +1431,19 @@ inherits@2, inherits@2.0.3, inherits@^2.0.1, inherits@~2.0.1, inherits@~2.0.3:
   version "2.0.3"
   resolved "https://www.myget.org/F/gl-unstable/npm/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
+inherits@^2.0.3:
+  version "2.0.4"
+  resolved "https://www.myget.org/F/gl-unstable/npm/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
+  integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
+
 ini@~1.3.0:
   version "1.3.5"
   resolved "https://www.myget.org/F/gl-unstable/npm/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
+
+interpret@^1.0.0:
+  version "1.4.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
+  integrity sha1-Zlq4vE2iendKQFhOgS4+D6RbGh4=
 
 is-arrayish@^0.2.1:
   version "0.2.1"
@@ -1279,6 +1468,13 @@ is-builtin-module@^1.0.0:
 is-callable@^1.1.1, is-callable@^1.1.3:
   version "1.1.3"
   resolved "https://www.myget.org/F/gl-unstable/npm/is-callable/-/is-callable-1.1.3.tgz#86eb75392805ddc33af71c92a0eedf74ee7604b2"
+
+is-core-module@^2.2.0:
+  version "2.8.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/is-core-module/-/is-core-module-2.8.0.tgz#0321336c3d0925e497fd97f5d95cb114a5ccd548"
+  integrity sha1-AyEzbD0JJeSX/Zf12VyxFKXM1Ug=
+  dependencies:
+    has "^1.0.3"
 
 is-date-object@^1.0.1:
   version "1.0.1"
@@ -1449,6 +1645,22 @@ jsonify@~0.0.0:
   version "0.0.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
 
+jsonwebtoken@^8.4.0:
+  version "8.5.1"
+  resolved "https://www.myget.org/F/gl-unstable/npm/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz#00e71e0b8df54c2121a1f26137df2280673bcc0d"
+  integrity sha1-AOceC431TCEhofJhN98igGc7zA0=
+  dependencies:
+    jws "^3.2.2"
+    lodash.includes "^4.3.0"
+    lodash.isboolean "^3.0.3"
+    lodash.isinteger "^4.0.4"
+    lodash.isnumber "^3.0.3"
+    lodash.isplainobject "^4.0.6"
+    lodash.isstring "^4.0.1"
+    lodash.once "^4.0.0"
+    ms "^2.1.1"
+    semver "^5.6.0"
+
 jszip@~3.1.5:
   version "3.1.5"
   resolved "https://www.myget.org/F/gl-unstable/npm/jszip/-/jszip-3.1.5.tgz#e3c2a6c6d706ac6e603314036d43cd40beefdf37"
@@ -1458,6 +1670,23 @@ jszip@~3.1.5:
     lie "~3.1.0"
     pako "~1.0.2"
     readable-stream "~2.0.6"
+
+jwa@^1.4.1:
+  version "1.4.1"
+  resolved "https://www.myget.org/F/gl-unstable/npm/jwa/-/jwa-1.4.1.tgz#743c32985cb9e98655530d53641b66c8645b039a"
+  integrity sha1-dDwymFy56YZVUw1TZBtmyGRbA5o=
+  dependencies:
+    buffer-equal-constant-time "1.0.1"
+    ecdsa-sig-formatter "1.0.11"
+    safe-buffer "^5.0.1"
+
+jws@^3.2.2:
+  version "3.2.2"
+  resolved "https://www.myget.org/F/gl-unstable/npm/jws/-/jws-3.2.2.tgz#001099f3639468c9414000e99995fa52fb478304"
+  integrity sha1-ABCZ82OUaMlBQADpmZX6UvtHgwQ=
+  dependencies:
+    jwa "^1.4.1"
+    safe-buffer "^5.0.1"
 
 karma@^1.1.2:
   version "1.7.1"
@@ -1548,6 +1777,41 @@ locate-path@^2.0.0:
   dependencies:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
+
+lodash.includes@^4.3.0:
+  version "4.3.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/lodash.includes/-/lodash.includes-4.3.0.tgz#60bb98a87cb923c68ca1e51325483314849f553f"
+  integrity sha1-YLuYqHy5I8aMoeUTJUgzFISfVT8=
+
+lodash.isboolean@^3.0.3:
+  version "3.0.3"
+  resolved "https://www.myget.org/F/gl-unstable/npm/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz#6c2e171db2a257cd96802fd43b01b20d5f5870f6"
+  integrity sha1-bC4XHbKiV82WgC/UOwGyDV9YcPY=
+
+lodash.isinteger@^4.0.4:
+  version "4.0.4"
+  resolved "https://www.myget.org/F/gl-unstable/npm/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz#619c0af3d03f8b04c31f5882840b77b11cd68343"
+  integrity sha1-YZwK89A/iwTDH1iChAt3sRzWg0M=
+
+lodash.isnumber@^3.0.3:
+  version "3.0.3"
+  resolved "https://www.myget.org/F/gl-unstable/npm/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz#3ce76810c5928d03352301ac287317f11c0b1ffc"
+  integrity sha1-POdoEMWSjQM1IwGsKHMX8RwLH/w=
+
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "https://www.myget.org/F/gl-unstable/npm/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+  integrity sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
+
+lodash.isstring@^4.0.1:
+  version "4.0.1"
+  resolved "https://www.myget.org/F/gl-unstable/npm/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
+  integrity sha1-1SfftUVuynzJu5XV2ur4i6VKVFE=
+
+lodash.once@^4.0.0:
+  version "4.1.1"
+  resolved "https://www.myget.org/F/gl-unstable/npm/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
+  integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -1660,9 +1924,21 @@ micromatch@^2.1.5:
     parse-glob "^3.0.4"
     regex-cache "^0.4.2"
 
+mime-db@1.51.0:
+  version "1.51.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/mime-db/-/mime-db-1.51.0.tgz#d9ff62451859b18342d960850dc3cfb77e63fb0c"
+  integrity sha1-2f9iRRhZsYNC2WCFDcPPt35j+ww=
+
 mime-db@~1.33.0:
   version "1.33.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/mime-db/-/mime-db-1.33.0.tgz#a3492050a5cb9b63450541e39d9788d2272783db"
+
+mime-types@^2.1.12:
+  version "2.1.34"
+  resolved "https://www.myget.org/F/gl-unstable/npm/mime-types/-/mime-types-2.1.34.tgz#5a712f9ec1503511a945803640fafe09d3793c24"
+  integrity sha1-WnEvnsFQNRGpRYA2QPr+CdN5PCQ=
+  dependencies:
+    mime-db "1.51.0"
 
 mime-types@~2.1.11, mime-types@~2.1.18:
   version "2.1.18"
@@ -1674,7 +1950,7 @@ mime@^1.3.4:
   version "1.6.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
 
-minimatch@^3.0.2, minimatch@^3.0.4:
+minimatch@3.0.4, minimatch@^3.0.2, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://www.myget.org/F/gl-unstable/npm/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   dependencies:
@@ -1718,6 +1994,11 @@ mkdirp@0.x.x, mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
+mockery@^1.7.0:
+  version "1.7.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/mockery/-/mockery-1.7.0.tgz#f4ede0d8750c1c9727c272ea2c60629e2c9a1c4f"
+  integrity sha1-9O3g2HUMHJcnwnLqLGBiniyaHE8=
+
 modclean-patterns-default@latest:
   version "1.1.2"
   resolved "https://www.myget.org/F/gl-unstable/npm/modclean-patterns-default/-/modclean-patterns-default-1.1.2.tgz#9b2d53e3abd707edcf0c1501b4d5ac04c947a283"
@@ -1749,6 +2030,11 @@ ms@0.7.2:
 ms@2.0.0:
   version "2.0.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
+
+ms@^2.1.1:
+  version "2.1.3"
+  resolved "https://www.myget.org/F/gl-unstable/npm/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
+  integrity sha1-V0yBOM4dK1hh8LRFedut1gxmFbI=
 
 mute-stream@~0.0.4:
   version "0.0.7"
@@ -1880,6 +2166,11 @@ object-component@0.0.3:
   version "0.0.3"
   resolved "https://www.myget.org/F/gl-unstable/npm/object-component/-/object-component-0.0.3.tgz#f0c69aa50efc95b866c186f400a33769cb2f1291"
 
+object-inspect@^1.9.0:
+  version "1.11.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/object-inspect/-/object-inspect-1.11.0.tgz#9dceb146cedd4148a0d9e51ab88d34cf509922b1"
+  integrity sha1-nc6xRs7dQUig2eUauI00z1CZIrE=
+
 object-keys@^1.0.8:
   version "1.0.12"
   resolved "https://www.myget.org/F/gl-unstable/npm/object-keys/-/object-keys-1.0.12.tgz#09c53855377575310cca62f55bb334abff7b3ed2"
@@ -1973,6 +2264,11 @@ pako@~1.0.2:
   version "1.0.6"
   resolved "https://www.myget.org/F/gl-unstable/npm/pako/-/pako-1.0.6.tgz#0101211baa70c4bca4a0f63f2206e97b7dfaf258"
 
+parse-cache-control@^1.0.1:
+  version "1.0.1"
+  resolved "https://www.myget.org/F/gl-unstable/npm/parse-cache-control/-/parse-cache-control-1.0.1.tgz#8eeab3e54fa56920fe16ba38f77fa21aacc2d74e"
+  integrity sha1-juqz5U+laSD+Fro493+iGqzC104=
+
 parse-glob@^3.0.4:
   version "3.0.4"
   resolved "https://www.myget.org/F/gl-unstable/npm/parse-glob/-/parse-glob-3.0.4.tgz#b2c376cfb11f35513badd173ef0bb6e3a388391c"
@@ -2039,6 +2335,11 @@ path-parse@^1.0.5:
   version "1.0.5"
   resolved "https://www.myget.org/F/gl-unstable/npm/path-parse/-/path-parse-1.0.5.tgz#3c1adf871ea9cd6c9431b6ea2bd74a0ff055c4c1"
 
+path-parse@^1.0.6:
+  version "1.0.7"
+  resolved "https://www.myget.org/F/gl-unstable/npm/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=
+
 path-type@^1.0.0:
   version "1.1.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/path-type/-/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
@@ -2101,6 +2402,13 @@ process-nextick-args@~2.0.0:
   version "2.0.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
 
+promise@^8.0.0:
+  version "8.1.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/promise/-/promise-8.1.0.tgz#697c25c3dfe7435dd79fcd58c38a135888eaf05e"
+  integrity sha1-aXwlw9/nQ13Xn81Yw4oTWIjq8F4=
+  dependencies:
+    asap "~2.0.6"
+
 prompt@^0.2.14:
   version "0.2.14"
   resolved "https://www.myget.org/F/gl-unstable/npm/prompt/-/prompt-0.2.14.tgz#57754f64f543fd7b0845707c818ece618f05ffdc"
@@ -2121,7 +2429,7 @@ pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://www.myget.org/F/gl-unstable/npm/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
 
-q@^1.0.1:
+q@^1.0.1, q@^1.5.1:
   version "1.5.1"
   resolved "https://www.myget.org/F/gl-unstable/npm/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
 
@@ -2132,6 +2440,13 @@ qjobs@^1.1.4:
 qs@6.5.2:
   version "6.5.2"
   resolved "https://www.myget.org/F/gl-unstable/npm/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
+
+qs@^6.4.0:
+  version "6.10.1"
+  resolved "https://www.myget.org/F/gl-unstable/npm/qs/-/qs-6.10.1.tgz#4931482fa8d647a5aab799c5271d2133b981fb6a"
+  integrity sha1-STFIL6jWR6Wqt5nFJx0hM7mB+2o=
+  dependencies:
+    side-channel "^1.0.4"
 
 quick-lru@^1.0.0:
   version "1.1.0"
@@ -2222,6 +2537,19 @@ readable-stream@^2.0.0, readable-stream@^2.0.2, readable-stream@^2.0.5, readable
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
+readable-stream@^2.2.2:
+  version "2.3.7"
+  resolved "https://www.myget.org/F/gl-unstable/npm/readable-stream/-/readable-stream-2.3.7.tgz#1eca1cf711aef814c04f62252a36a62f6cb23b57"
+  integrity sha1-Hsoc9xGu+BTAT2IlKjamL2yyO1c=
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.3"
+    isarray "~1.0.0"
+    process-nextick-args "~2.0.0"
+    safe-buffer "~5.1.1"
+    string_decoder "~1.1.1"
+    util-deprecate "~1.0.1"
+
 readable-stream@~1.0.2:
   version "1.0.34"
   resolved "https://www.myget.org/F/gl-unstable/npm/readable-stream/-/readable-stream-1.0.34.tgz#125820e34bc842d2f2aaafafe4c2916ee32c157c"
@@ -2250,6 +2578,13 @@ readdirp@^2.0.0:
     minimatch "^3.0.2"
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
+
+rechoir@^0.6.2:
+  version "0.6.2"
+  resolved "https://www.myget.org/F/gl-unstable/npm/rechoir/-/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
+  integrity sha1-hSBLVNuoLVdC4oyWdW70OvUOM4Q=
+  dependencies:
+    resolve "^1.1.6"
 
 redent@^2.0.0:
   version "2.0.0"
@@ -2302,6 +2637,14 @@ repeating@^2.0.0:
 requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
+
+resolve@^1.1.6:
+  version "1.20.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/resolve/-/resolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
+  integrity sha1-YpoBP7P3B1XW8LeTXMHCxTeLGXU=
+  dependencies:
+    is-core-module "^2.2.0"
+    path-parse "^1.0.6"
 
 resolve@^1.1.7, resolve@^1.3.2:
   version "1.8.1"
@@ -2383,6 +2726,24 @@ shell-quote@^1.6.1:
 shelljs@^0.5.1:
   version "0.5.3"
   resolved "https://www.myget.org/F/gl-unstable/npm/shelljs/-/shelljs-0.5.3.tgz#c54982b996c76ef0c1e6b59fbdc5825f5b713113"
+
+shelljs@^0.8.4:
+  version "0.8.4"
+  resolved "https://www.myget.org/F/gl-unstable/npm/shelljs/-/shelljs-0.8.4.tgz#de7684feeb767f8716b326078a8a00875890e3c2"
+  integrity sha1-3naE/ut2f4cWsyYHiooAh1iQ48I=
+  dependencies:
+    glob "^7.0.0"
+    interpret "^1.0.0"
+    rechoir "^0.6.2"
+
+side-channel@^1.0.4:
+  version "1.0.4"
+  resolved "https://www.myget.org/F/gl-unstable/npm/side-channel/-/side-channel-1.0.4.tgz#efce5c8fdc104ee751b25c58d4290011fa5ea2cf"
+  integrity sha1-785cj9wQTudRslxY1CkAEfpeos8=
+  dependencies:
+    call-bind "^1.0.0"
+    get-intrinsic "^1.0.2"
+    object-inspect "^1.9.0"
 
 signal-exit@^3.0.0:
   version "3.0.2"
@@ -2577,6 +2938,22 @@ supports-color@^5.3.0:
   dependencies:
     has-flag "^3.0.0"
 
+sync-request@6.1.0:
+  version "6.1.0"
+  resolved "https://www.myget.org/F/gl-unstable/npm/sync-request/-/sync-request-6.1.0.tgz#e96217565b5e50bbffe179868ba75532fb597e68"
+  integrity sha1-6WIXVlteULv/4XmGi6dVMvtZfmg=
+  dependencies:
+    http-response-object "^3.0.1"
+    sync-rpc "^1.2.1"
+    then-request "^6.0.0"
+
+sync-rpc@^1.2.1:
+  version "1.3.6"
+  resolved "https://www.myget.org/F/gl-unstable/npm/sync-rpc/-/sync-rpc-1.3.6.tgz#b2e8b2550a12ccbc71df8644810529deb68665a7"
+  integrity sha1-suiyVQoSzLxx34ZEgQUp3raGZac=
+  dependencies:
+    get-port "^3.1.0"
+
 tar-stream@^1.5.0:
   version "1.6.1"
   resolved "https://www.myget.org/F/gl-unstable/npm/tar-stream/-/tar-stream-1.6.1.tgz#f84ef1696269d6223ca48f6e1eeede3f7e81f395"
@@ -2629,6 +3006,23 @@ tfx-cli@^0.6.4:
     vso-node-api "^5.0.0"
     winreg "0.0.12"
     xml2js "^0.4.16"
+
+then-request@^6.0.0:
+  version "6.0.2"
+  resolved "https://www.myget.org/F/gl-unstable/npm/then-request/-/then-request-6.0.2.tgz#ec18dd8b5ca43aaee5cb92f7e4c1630e950d4f0c"
+  integrity sha1-7Bjdi1ykOq7ly5L35MFjDpUNTww=
+  dependencies:
+    "@types/concat-stream" "^1.6.0"
+    "@types/form-data" "0.0.33"
+    "@types/node" "^8.0.0"
+    "@types/qs" "^6.2.31"
+    caseless "~0.12.0"
+    concat-stream "^1.6.0"
+    form-data "^2.2.0"
+    http-basic "^8.1.1"
+    http-response-object "^3.0.1"
+    promise "^8.0.0"
+    qs "^6.4.0"
 
 through@2, through@~2.3, through@~2.3.1:
   version "2.3.8"
@@ -2734,6 +3128,11 @@ type-is@~1.6.16:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.18"
+
+typedarray@^0.0.6:
+  version "0.0.6"
+  resolved "https://www.myget.org/F/gl-unstable/npm/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+  integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
 typescript@^3.5.1:
   version "3.5.1"
