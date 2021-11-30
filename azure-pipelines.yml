@@ -8,6 +8,7 @@ trigger:
 
 pool:
   vmImage: windows-latest
+  
 steps:
 - task: gittools.gitversion.gitversion-task.GitVersion@3
   displayName: GitVersion
