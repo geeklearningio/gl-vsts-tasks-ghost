@@ -61,7 +61,7 @@
   version "10.5.1"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-10.5.1.tgz#d578446f4abff5c0b49ade9b4e5274f6badaadfc"
 
-"@types/node@^10.0.3":
+"@types/node@^10.0.0", "@types/node@^10.0.3":
   version "10.17.60"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-10.17.60.tgz#35f3d6213daed95da7f0f73e75bcc6980e90597b"
   integrity sha1-NfPWIT2u2V2n8Pc+dbzGmA6QWXs=
@@ -69,10 +69,6 @@
 "@types/node@^11.10.4":
   version "11.13.13"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-11.13.13.tgz#a3d2a8a908ce322f24f0f8c88160b44c7dd5c452"
-
-"@types/node@^6.0.0":
-  version "6.0.113"
-  resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-6.0.113.tgz#4b41f38ad03e4b41f9dc259b3b58aecb22c9aebc"
 
 "@types/node@^8.0.0":
   version "8.10.66"
@@ -1437,8 +1433,9 @@ inherits@^2.0.3:
   integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
 
 ini@~1.3.0:
-  version "1.3.5"
-  resolved "https://www.myget.org/F/gl-unstable/npm/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
+  integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
 
 interpret@^1.0.0:
   version "1.4.0"
