@@ -61,7 +61,7 @@
   version "10.5.1"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-10.5.1.tgz#d578446f4abff5c0b49ade9b4e5274f6badaadfc"
 
-"@types/node@^10.0.3":
+"@types/node@^10.0.0", "@types/node@^10.0.3":
   version "10.17.60"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-10.17.60.tgz#35f3d6213daed95da7f0f73e75bcc6980e90597b"
   integrity sha1-NfPWIT2u2V2n8Pc+dbzGmA6QWXs=
@@ -69,10 +69,6 @@
 "@types/node@^11.10.4":
   version "11.13.13"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-11.13.13.tgz#a3d2a8a908ce322f24f0f8c88160b44c7dd5c452"
-
-"@types/node@^6.0.0":
-  version "6.0.113"
-  resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-6.0.113.tgz#4b41f38ad03e4b41f9dc259b3b58aecb22c9aebc"
 
 "@types/node@^8.0.0":
   version "8.10.66"
@@ -747,12 +743,6 @@ debug@2.6.9, debug@^2.1.2:
   dependencies:
     ms "2.0.0"
 
-debug@^3.1.0:
-  version "3.1.0"
-  resolved "https://www.myget.org/F/gl-unstable/npm/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
-  dependencies:
-    ms "2.0.0"
-
 decamelize-keys@^1.0.0:
   version "1.1.0"
   resolved "https://www.myget.org/F/gl-unstable/npm/decamelize-keys/-/decamelize-keys-1.1.0.tgz#d171a87933252807eb3cb61dc1c1445d078df2d9"
@@ -1117,16 +1107,10 @@ find-up@^2.0.0:
   dependencies:
     locate-path "^2.0.0"
 
-follow-redirects@^1.0.0:
-  version "1.5.0"
-  resolved "https://www.myget.org/F/gl-unstable/npm/follow-redirects/-/follow-redirects-1.5.0.tgz#234f49cf770b7f35b40e790f636ceba0c3a0ab77"
-  dependencies:
-    debug "^3.1.0"
-
-follow-redirects@^1.14.0:
-  version "1.14.5"
-  resolved "https://www.myget.org/F/gl-unstable/npm/follow-redirects/-/follow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
-  integrity sha1-8JpYSJgdPHcrU5Iwl3hSP42Fw4E=
+follow-redirects@^1.0.0, follow-redirects@^1.14.0:
+  version "1.14.7"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.7.tgz#2004c02eb9436eee9a21446a6477debf17e81685"
+  integrity sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==
 
 for-in@^1.0.1:
   version "1.0.2"
