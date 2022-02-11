@@ -61,7 +61,7 @@
   version "10.5.1"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-10.5.1.tgz#d578446f4abff5c0b49ade9b4e5274f6badaadfc"
 
-"@types/node@^10.0.3":
+"@types/node@^10.0.0", "@types/node@^10.0.3":
   version "10.17.60"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-10.17.60.tgz#35f3d6213daed95da7f0f73e75bcc6980e90597b"
   integrity sha1-NfPWIT2u2V2n8Pc+dbzGmA6QWXs=
@@ -69,10 +69,6 @@
 "@types/node@^11.10.4":
   version "11.13.13"
   resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-11.13.13.tgz#a3d2a8a908ce322f24f0f8c88160b44c7dd5c452"
-
-"@types/node@^6.0.0":
-  version "6.0.113"
-  resolved "https://www.myget.org/F/gl-unstable/npm/@types/node/-/@types/node-6.0.113.tgz#4b41f38ad03e4b41f9dc259b3b58aecb22c9aebc"
 
 "@types/node@^8.0.0":
   version "8.10.66"
@@ -502,8 +498,9 @@ chokidar@^1.4.1:
     fsevents "^1.0.0"
 
 chownr@^1.0.1:
-  version "1.0.1"
-  resolved "https://www.myget.org/F/gl-unstable/npm/chownr/-/chownr-1.0.1.tgz#e2a75042a9551908bebd25b8523d5f9769d79181"
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.4.tgz#6fc9d7b42d32a583596337666e7d08084da2cc6b"
+  integrity sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==
 
 cli-boxes@^1.0.0:
   version "1.0.0"
